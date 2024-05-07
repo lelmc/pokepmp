@@ -39,6 +39,8 @@ public class Placeholders {
             switch (values[1]) {
                 case "name":
                     return p.get(number).getID();
+                case "score":
+                    return p.get(number).getScore();
                 case "rank":
                     return util.rank(p.get(number).getScore());
                 case "wins":
